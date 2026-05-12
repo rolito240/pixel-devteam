@@ -1,17 +1,14 @@
 # Task Board
-Ultima actualizacion: 2026-05-12 19:25
+Ultima actualizacion: 2026-05-12 19:40
 
 ## BACKLOG
 - [TASK-008] Primer proyecto piloto — asig: team
 
 ## IN PROGRESS
-- [TASK-004] Instalar MCPs adicionales — asig: devops ⬆️ 40%
-  - puppeteer: INSTALADO
-  - sqlite: INSTALADO
-  - brave-search: PENDIENTE (requiere BRAVE_API_KEY)
-  - tavily: PENDIENTE (requiere TAVILY_API_KEY)
-  - notion: PENDIENTE (requiere NOTION_API_KEY)
-  - slack: PENDIENTE (requiere SLACK_TOKEN)
+- [TASK-004] Instalar MCPs adicionales — asig: devops ⬆️ 70%
+  - brave-search: INSTALADO (necesita BRAVE_API_KEY)
+  - tavily: INSTALADO (necesita TAVILY_API_KEY)
+  - notion: INSTALADO (necesita NOTION_API_KEY)
 
 ## REVIEW
 - (vacio)
@@ -25,5 +22,5 @@ Ultima actualizacion: 2026-05-12 19:25
 - [TASK-005] Catalogo de servicios con precios — 2026-05-12
 - [TASK-006] Template de onboarding — 2026-05-12
 - [TASK-007] Crear repo GitHub pixel-devteam — 2026-05-12
-  - Repo: https://github.com/rolito240/pixel-devteam
-  - 32 archivos, 789 lineas, commit inicial pusheado
+- MCPs corregidos: Puppeteer deprecado (removido, Playwright ya esta), SQLite no existe como paquete MCP
+- MCPs finales (13): github, filesystem, time, exa, playwright, ms-learn, supabase, context7, figma, linkedin, brave-search, tavily, notion
