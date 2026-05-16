@@ -37,4 +37,4 @@ cat CONVENTIONS.md
 ## Contact
 
 - Telegram: @HermesAgent
-- GitHub: Mariamm240
+- GitHub: rolito240 (agent repos) / Mariamm240 (personal)
