@@ -339,6 +339,100 @@ Un solo agente que maneja TODO el ecosistema de datos.
 
 ---
 
+### V7. Asistente de Venta de Autos  [para concesionarios en Colombia]
+
+**Target:** Concesionarios, vendedores de autos nuevos/usados, compraventas
+
+Este agente es un **vendedor digital completo** para el sector automotriz colombiano. No solo responde preguntas — califica clientes, busca vehiculos por placa, gestiona inventario, y cierra ventas.
+
+**Skills necesarias (por crear):**
+- `colombia-vehicle-lookup` — Consulta de vehiculos por placa (RUNT, SOAT, tecnicomecanica, multas SIMIT)
+- `auto-inventory-manager` — Inventario de autos disponibles, vendidos, en taller
+- `lead-qualifier-auto` — Filtro de compradores: presupuesto, plazo, financiacion, tipo de vehiculo
+- `social-media-faq-bot` — Bot automatico para redes: responde preguntas frecuentes, filtra leads
+- `financing-calculator` — Calculo de cuotas, credito, tasa, abono inicial
+- `vehicle-comparator` — Comparacion tecnica de vehiculos lado a lado
+- `test-drive-scheduler` — Coordinacion de test drives, recordatorios
+- `deal-closer` — Generacion de cotizaciones, ofertas, seguimiento post-venta
+
+**MCPs:**
+- google-workspace (Gmail, Calendar, Sheets, Docs)
+- whatsapp-business (canal principal con clientes)
+- filesystem (inventario, documentos, cotizaciones)
+- web_search (precios de mercado, listados en Carroya/MercadoLibre)
+- maps (ubicacion del concesionario, rutas de test drive)
+
+**Capacidades detalladas:**
+
+**1. Consulta de vehiculos por placa**
+   - Input: "Que sabes de la placa ABC-123?"
+   - Output: Marca, linea, modelo, ano, color, cilindraje, transmision, SOAT vigente?, tecnicomecanica al dia?, multas pendientes?, ultimo propietario registrado
+   - Ideal para: recibir un usado en parte de pago, verificar historial antes de comprar
+
+**2. Bot de redes sociales + FAQ inteligente**
+   - Responde automaticamente en Facebook/Instagram/WhatsApp:
+     - "Precio del Spark GT 2015?"
+     - "Tienen financiacion directa?"
+     - "Donde estan ubicados?"
+     - "Horarios de atencion?"
+   - Detecta intencion de compra vs. curiosidad
+   - Si detecta interes REAL: inicia flujo de calificacion
+
+**3. Filtro y calificacion de leads**
+   Preguntas automaticas para calificar:
+   - Presupuesto: "Cuanto planeas invertir?"
+   - Plazo: "Para cuando necesitas el carro?"
+   - Financiacion: "Efectivo o credito?"
+   - Tipo: "Sedan, SUV, camioneta?"
+   - Usado o nuevo?
+   - Tiene vehiculo para entrega (trade-in)?
+   
+   Resultado: Lead calificado en frio/tibio/caliente con puntuacion
+
+**4. Catalogo e inventario**
+   - Que autos hay disponibles ahora?
+   - Filtros por: marca, precio, ano, kilometraje, combustible
+   - Alertas: "Llego un Onix Turbo 2024 que te puede interesar"
+   - Actualizacion diaria de precios
+
+**5. Cotizaciones y financiacion**
+   - Genera cotizacion en PDF con fotos del vehiculo
+   - Calcula: cuota mensual segun abono inicial y plazo
+   - Simula diferentes escenarios de credito
+   - Compara con tasa del banco vs financiacion directa
+
+**6. Seguimiento automatico**
+   - Dia 1: "Gracias por tu visita a [concesionario]"
+   - Dia 3: "Aun tienes interes en el [vehiculo]?"
+   - Dia 7: "Bajamos el precio del [vehiculo]!"
+   - Dia 30: "Te gustaria ver otras opciones?"
+   - Cumpleanos del cliente: saludo + oferta especial
+
+**7. Post-venta**
+   - Recordatorio de SOAT y tecnicomecanica
+   - Recordatorio de cambio de aceite/mantenimiento
+   - Encuesta de satisfaccion
+   - Pedir referidos
+
+**Flujo completo tipico:**
+
+```
+1. Cliente escribe en Instagram: "Cuanto vale la Mazda CX-30?"
+2. Bot responde: "Tenemos desde $94.900.000 la version Touring.
+   Te interesa financiada o de contado?"
+3. Cliente: "Financiada"
+4. Bot: "Perfecto! Con cuanto abono inicial cuentas?
+   Y para cuando necesitas el vehiculo?"
+5. Cliente da respuestas -> Lead calificado ALTO
+6. Bot agenda cita con vendedor humano
+7. Vendedor recibe: "Lead CALIENTE: Juan, presupuesto $90M,
+   listo para comprar este mes, CONTACTAR YA"
+```
+
+**Precio:** $300-600/mes (plan basico chatbot+FAQ) | $600-1000/mes (plan completo con CRM+ventas)
+
+---
+
 ## Plan de Accion: Fases de Implementacion
 
 ### FASE 1 - Preparacion (1-2 semanas)
@@ -351,6 +445,10 @@ Un solo agente que maneja TODO el ecosistema de datos.
   - `crm-management`, `proposal-generator`, `email-campaigns`
   - `fleet-management`, `shipment-tracking`, `fuel-expense-tracking`
   - `personal-assistant`, `presentation-maker`, `note-taking`
+  - `colombia-vehicle-lookup`, `auto-inventory-manager`
+  - `lead-qualifier-auto`, `social-media-faq-bot`
+  - `financing-calculator`, `vehicle-comparator`
+  - `test-drive-scheduler`, `deal-closer`
 - [ ] Configurar canal WhatsApp Business API
 - [ ] Verificar/conectar Notion con token valido
 
@@ -398,6 +496,7 @@ Propongo arrancar por aqui porque:
 | Asistente Comercial | — | $200-500 |
 | Asistente Logistico | — | $300-700 |
 | Asistente Personal Premium | — | $10-50 |
+| Asistente Venta de Autos | $300-600 setup | $300-1000/mes |
 
 ---
 
