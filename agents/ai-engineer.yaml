@@ -15,6 +15,7 @@ toolsets:
 skills:
   - skill-vetter
   - agent-safety-review
+  - diagnose
   - hermes-agent
 
 responsibilities:
