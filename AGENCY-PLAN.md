@@ -495,51 +495,64 @@ Propongo arrancar por aqui porque:
 
 ---
 
-## Resumen de Precios Sugeridos
+## Resumen de Precios Sugeridos — COP (pesos colombianos)
 
 ### Agentes Base
 
-| Producto | Setup | Mensual |
-|----------|-------|---------|
-| Full-Stack Developer | $800-2000 | $300-500 |
-| Data Analyst | $400-1000 | $200-400 |
-| Data Scientist | $600-1500 | $400-800 |
-| Asistente Educativo | — | $200-500 |
-| Asistente Clinico | — | $200-500 |
-| Asistente Legal | — | $300-700 |
-| Asistente Comercial | — | $200-500 |
-| Asistente Logistico | — | $300-700 |
-| Asistente Personal Premium | — | $10-50 |
-| Asistente Venta de Autos | $300-600 | $300-600 |
+| Producto | Setup (unico) | Mensual |
+|----------|--------------|---------|
+| Full-Stack Developer | $500,000 | $200,000 |
+| Data Analyst | $300,000 | $150,000 |
+| Data Scientist | $500,000 | $200,000 |
+| Asistente Educativo | $200,000 | $80,000 |
+| Asistente Clinico | $200,000 | $80,000 |
+| Asistente Legal | $300,000 | $120,000 |
+| Asistente Comercial | $200,000 | $80,000 |
+| Asistente Logistico | $300,000 | $120,000 |
+| Asistente Personal Premium | $50,000 | $20,000 |
+| **Asistente Venta de Autos** | **$200,000** | **$80,000** |
 
 ### Funciones Avanzadas (Add-ons Premium)
 
-| ID | Funcion | Precio/mes |
-|----|---------|------------|
-| F1 | Auto-Vendedor Digital (bot redes + lead qualification) | $200-400 |
-| F2 | Asistente de Ventas 24/7 (ciclo completo automatizado) | $300-600 |
-| F3 | Analista de Mercado y Competencia | $200-500 |
-| F4 | Multi-Canal Hub (WhatsApp + Telegram + IG + FB + Web) | $200-400 |
-| F5 | Memoria y Perfil de Cliente Premium | $150-300 |
-| F6 | Documentos Automaticos Pro (firma digital incluida) | $200-400 |
-| F7 | Reportes Ejecutivos Automaticos | $150-300 |
-| F8 | Asistente de Voz (atencion telefonica IA) | $400-700 |
-| F9 | Campanas Email + WhatsApp Automatizadas | $200-500 |
-| F10 | Onboarding y Capacitacion de Personal | $200-400 |
+| ID | Funcion | Setup | Mensual |
+|----|---------|-------|---------|
+| F1 | Auto-Vendedor Digital (bot redes + lead filter) | $100,000 | $60,000 |
+| F2 | Asistente Ventas 24/7 (ciclo completo) | $200,000 | $80,000 |
+| F3 | Analista de Mercado y Competencia | $150,000 | $60,000 |
+| F4 | Multi-Canal Hub (WhatsApp+IG+FB+Web) | $100,000 | $40,000 |
+| F5 | Memoria y Perfil de Cliente Premium | $100,000 | $40,000 |
+| F6 | Documentos Automaticos Pro | $150,000 | $60,000 |
+| F7 | Reportes Ejecutivos Automaticos | $100,000 | $40,000 |
+| F8 | Asistente de Voz (atencion telefonica) | $300,000 | $120,000 |
+| F9 | Campanas Email + WhatsApp Automatizadas | $150,000 | $60,000 |
+| F10 | Onboarding y Capacitacion de Personal | $100,000 | $40,000 |
 
 ### Ejemplo de Ingreso por Cliente (Concesionario)
 
 ```
-Asistente Venta de Autos (base):  $500/mes
-+ F1. Auto-Vendedor Digital:      $300/mes
-+ F3. Analista de Mercado:        $300/mes
-+ F5. Memoria Premium:            $200/mes
-+ F7. Reportes Ejecutivos:        $200/mes
-+ F9. Campanas Automatizadas:     $300/mes
-------------------------------------------
-Total:                           $1,800/mes
-Con bundle 5 func (-25%):        $1,475/mes
+COSTOS OPERATIVOS (por agente/mes):
+  VPS Hostinger:       $42,000
+  Tokens IA (bot activo): $120,000
+  -------------------------------
+  Total costo:         $162,000
+
+INGRESOS (Concesionario con agente base + F1 + F5):
+  Setup:               $400,000 (unico)
+  Mensual base:        $80,000
+  F1 Auto-Vendedor:    +$60,000
+  F5 Memoria Premium:  +$40,000
+  -------------------------------
+  Total mensual:       $180,000
+  Ganancia mensual:    $18,000 (despues de costos)
+  Ganancia 1er ano:    $180,000 x 12 + $400,000 - $162,000 x 12
+                      = $2,160,000 + $400,000 - $1,944,000
+                      = $616,000 COP ganancia neta 1er ano
+  MAS LOS SIGUIENTES: $216,000/ano ganancia neta pura
 ```
+
+> **Objetivo:** 10 clientes en el primer ano
+> **Ingreso anual proyectado:** ~$6-8M COP
+> **Margen:** Mejora cada mes porque el VPS se reparte entre mas agentes
 
 ---
 
